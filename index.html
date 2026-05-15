@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Work Exhibit</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-text">Portfolio</div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor">
+    <svg id="cursor-arrow" width="28" height="36" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2L26 13.5L15 16.5L10 30L2 2Z" fill="#0a0a0a" stroke="#c9a84c" stroke-width="1.4" stroke-linejoin="round"/>
+      <path d="M2 2L10 10" stroke="#e8d49a" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+    </svg>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox">
+    <div class="lightbox-inner">
+      <div class="lightbox-close" id="lightbox-close">
+        Close
+      </div>
+      <img id="lightbox-img" src="" alt=""/>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">YOUR NAME</a>
+
+    <ul class="nav-links">
+      <li><a href="#works">Works</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        Graphic Designer · Visual Storyteller · Brand Architect
+      </div>
+
+      <h1 class="hero-name">
+        Your<br>
+        <em>Name.</em>
+      </h1>
+
+      <p class="hero-sub">
+        Crafting Experiences That Endure
+      </p>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works">
+
+    <div class="section-header reveal">
+      <div>
+        <div class="section-label">Selected Works</div>
+        <h2 class="section-title">Portfolio</h2>
+      </div>
+
+      <div class="section-count">06</div>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="filter-tabs reveal">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="branding">Branding</button>
+      <button class="filter-tab" data-filter="editorial">Editorial</button>
+      <button class="filter-tab" data-filter="digital">Digital</button>
+    </div>
+
+    <!-- WORK GRID -->
+    <div class="works-grid" id="worksGrid">
+
+      <div class="work-card reveal" data-filter="branding">
+        <div class="work-placeholder">
+          ADD IMAGE
+        </div>
+
+        <div class="work-overlay">
+          <div class="work-cat">Branding</div>
+          <div class="work-title">Aura — Brand Identity</div>
+          <div class="work-year">2024</div>
+        </div>
+      </div>
+
+      <div class="work-card reveal" data-filter="editorial">
+        <div class="work-placeholder">
+          ADD IMAGE
+        </div>
+
+        <div class="work-overlay">
+          <div class="work-cat">Editorial</div>
+          <div class="work-title">Monolith Magazine</div>
+          <div class="work-year">2024</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div>
+      <div class="about-label reveal">About Me</div>
+
+      <h2 class="about-headline reveal">
+        Design is the
+        <em>language</em>
+        of intention.
+      </h2>
+
+      <p class="about-text reveal">
+        I am a graphic designer with a passion for creating visual experiences that transcend the ordinary.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <div class="contact-label reveal">
+      Let's Collaborate
+    </div>
+
+    <h2 class="contact-headline reveal">
+      Let's create together.
+    </h2>
+
+    <button class="btn-primary reveal" id="contactBtn">
+      <span>Get In Touch</span>
+    </button>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-copy">
+      © 2025 Your Name — All Rights Reserved
+    </div>
+
+    <div class="footer-socials">
+      <a href="#">Instagram</a>
+      <a href="#">Behance</a>
+      <a href="#">LinkedIn</a>
+    </div>
+
+  </footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
